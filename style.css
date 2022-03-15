@@ -1,5 +1,6 @@
 :root{
     --primary-color-1:rgba(255, 196, 0, 0.5);
+    --font-size-project-text: 2rem;
 
 }
 *{
@@ -11,9 +12,9 @@
 
 html{
     font-size: 62.5%;
-    background-color: gray;
-    
+    background-color: gray;    
 }
+
 
 nav{
     height: 10rem;
@@ -26,8 +27,13 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 80%;
+    height: auto;
 
+}
+section{
+    position: relative;
+    /* Quitar el scroll hacia los lados */
+    overflow: hidden;
 }
 picture{
     height: 100%;
@@ -55,7 +61,7 @@ img{
     flex-wrap: wrap;
     height: auto;
     width: 100vw;
-    background-color: green;
+    /* background-color: green; */
     justify-content: space-evenly;
     align-items: center;
 }
@@ -68,18 +74,52 @@ img{
     margin: 5px;
 }
 
+/* Curriculo proyectos */
 .sec_3{
-    height: 50vh;
+    height: auto;
     width: 100vw;
-    background-color: #355894;
-
+    justify-content: space-evenly;
+    align-items: center;
 }
-.sec_4{
-    height: 50vh;
+/*=================================================================  */
+.project_container {
+    position: relative;
+    height: fit-content;
     width: 100vw;
-    background-color: #b84c31cb;
+    text-align: center;
+  }
 
+
+.proj_slide{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: auto; */
 }
+.img_project{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.block{
+    width: 450px;
+}
+
+.block img{
+    width: 450px;
+    height: 450px;
+}
+
+
+
+/* =========================================================================== */
+
+
 footer{
     margin-top: auto;
     min-width: 32rem;
