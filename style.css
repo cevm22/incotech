@@ -7,6 +7,8 @@
     --secondary-color:rgba(101,15,52,255);
     --secondary-color_2: #280514;
     --font-size-project-header: 3rem;
+    --font-size-project-header_2: 1.5rem;
+    --font-size-project-header_3: 2.5rem;
     --font-size-project-text: 2.5rem;
     --bg-opacity-main: rgba(0, 0, 0, 0.651);
     --bg-opacity-logo:rgba(0, 0, 0, 0.863);
@@ -24,6 +26,7 @@ html{
     scroll-behavior: smooth;
 }
 
+/* ================================================== */
 
 nav{
     position: fixed;
@@ -33,45 +36,57 @@ nav{
     min-width: 32rem;  
     background-color: black;
     color: white;
+    overflow: hidden;
 }
-
-.nav_container{
-    width: 100%;
-    position: relative;
-    display: inline-block;
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
-    /* align-items: center; */
+.nav_main{
+    height: 100%;
 }
 
 .logo{
-    position: absolute;
-    top: 0;
-    left: -20px;
     height: 10vh;
-    width: 300px;
+    width: 25%;
 }
+
+.nav_container{
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+}
+
 .navegacion{
-    display: inline-block;
     position: absolute;
-    top: 3rem;
-    right: 0;
+    width: 75%;
+    right: 0px;
+    display: flex;
+
 }
+
+ul{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+li{
+    display: inline-block;
+    flex-wrap: nowrap;
+    height: auto;
+    padding-right: 10px;
+}
+
 .navegacion li{
-        display: inline-block;
         font-size: 20px;
         color: white;
-        padding-top: 0;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size:var(--font-size-project-header) ;
+        font-size: var(--font-size-project-header_2);
 }
 
 li:hover{
     color: var(--primary-color-1);
     text-decoration:overline  1px;
-    
+    cursor: pointer;
 }
+
 /* ================================================== */
 
 main{
@@ -342,7 +357,56 @@ footer{
     text-align: center;
 }
 
-@media (min-width:650px){
+@media (min-width:660px){
+
+    nav{
+        position: fixed;
+        z-index: 1;
+        height: 11%;
+        width: 100%;
+        min-width: 32rem;  
+        background-color: black;
+        color: white;
+    }
+    
+    .nav_container{
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        display: flex;
+    }
+    
+    .logo{
+        position: absolute;
+        top: 0;
+        left: -60px;
+        height: 10vh;
+        width: 300px;
+    }
+    .navegacion{
+        display: inline-block;
+        position: absolute;
+        top: 3rem;
+        right: 0;
+    }
+    .navegacion li{
+            display: inline-block;
+            font-size: 20px;
+            color: white;
+            padding-top: 0;
+            padding-left: 15px;
+            font-size:var(--font-size-project-header_3) ;
+    }
+    li:hover{
+        color: var(--primary-color-1);
+        text-decoration:overline  1px;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+/* ================================= */
     .project_container {
         display: flex;
         flex-wrap: wrap;
