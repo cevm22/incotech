@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -28,19 +29,19 @@
                 <!-- DISENO DE PCB -->
                 <div class="servicios">
                     <picture>
-                        <img src="./imgs/pcb_tiny.png" alt="PCB design">
+                        <img src="./imgs/pcb_tiny.png" alt="PCB design" onclick="onClick(this)"  class="cursor_pointer">
                     </picture>
                 </div>
                 <!-- SISTEMAS EMBEBIDOS -->
                 <div class="servicios">
                     <picture>
-                        <img src="./imgs/emb_tiny.png" alt="PCB design">
+                        <img src="./imgs/emb_tiny.png" alt="PCB design" onclick="onClick(this)"  class="cursor_pointer">
                     </picture>
                 </div>
                 <!-- DESARROLLO DE SOFTWARE -->
                 <div class="servicios">
                     <picture>
-                        <img src="./imgs/sof_tiny.png" alt="PCB design">
+                        <img src="./imgs/sof_tiny.png" alt="PCB design" onclick="onClick(this)"  class="cursor_pointer">
                     </picture>
                 </div>
             </div>
@@ -48,99 +49,183 @@
         
         <!-- CURRICULO DE PROYECTOS -->
         <section >
+            <div class="header_projects_container"></div>
             <div class="sec_3">
                 <div class="project_container">
-                    
-                    
+                      
                     <div class="slide ">
                         <div class="proj_1 proj_slide">
                             <!-- img proyecto -->
                             <div class="img_project">
-                                <div class="head_project">
-                                    <p>Design and assembly Fryer PCB</p>
+                                <div class="head_project head_round">
+                                    <p>Fryer control module</p>
                                 </div>
-                                <picture class="block hide">
-                                    <img src="/imgs/fryer_design.png" alt="fryer_design">
+                                <picture class="block hide img_size">
+                                    <img src="/imgs/fryer_design.png" alt="fryer_design" onclick="onClick(this)"  class="cursor_pointer">
                                 </picture>
-                                <picture class="block">
-                                    <img src="/imgs/fryer_pcb.jpg" alt="fryer_pcb">
+                                <picture class="block img_size">
+                                    <img src="/imgs/fryer_pcb.jpg" alt="fryer_pcb" onclick="onClick(this)" class="cursor_pointer">
                                 </picture>
 
-                                <div class="block"><p> Design, assembly and code a PCB circuit with a microcontroller to automate the production of a fryer to reduce maintenance  cost for spare part.</p>
+                                <div class="block description web_size"><p class="desc_text"> Design, assembly and code a PCB circuit with a microcontroller to automate the production of a fryer, storing 8 recipies by controlling temperature and time according the product.</p>
                                     <div class="head_project">
                                         <p>Customer</p>
                                     </div>
-                                    <div class="logo_client"></div>
-                                    <div class="logo_client"></div>
+                                    <div class="logo_client logo_round">
+                                        <picture>
+                                            <img src="/imgs/logos/soriana.png" alt="Tiendas Soriana" >
+                                        </picture>
+                                    </div>
+                                    <div class="logo_client logo_round">
+                                        <picture>
+                                            <img src="/imgs/logos/logo_fidget.jpeg" alt="Grupo Fidget" >
+                                        </picture>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            </div>
+                            
+                    </div>
+                    
+
+                    <div class="slide ">
+                        <div class="proj_3 proj_slide">
+                            <!-- img proyecto -->
+                            <div class="img_project">
+                                <div class="head_project head_round">
+                                    <p>Control circuit - Conveyor</p>
+                                </div>
+                                <picture class="block hide img_size ">
+                                    <img src="/imgs/auto_mega.jpg" alt="auto_mega" onclick="onClick(this)" class="cursor_pointer">
+                                </picture>
+                                <picture class="block img_size">
+                                    <img src="/imgs/auto_mega_2.jpg" alt="auto_mega_2" onclick="onClick(this)" class="cursor_pointer">
+                                </picture>
+
+                                <div class="block description web_size"><p class="desc_text">Design, assembly and program a control circuit for conveyor of line production. </p>
+                                    <div class="head_project">
+                                        <p>Customer</p>
+                                    </div>
+                                    <div class="logo_client logo_round ">
+                                        <picture>
+                                            <img src="/imgs/logos/maindsteel.jpg" alt="Maindsteel">
+                                        </picture>
+                                    </div>
+
                                 </div>
                                 
                             </div>
                             </div>
                     </div>
-                    
 
-                    <div class="slide">
-                        <div class="proj_2 proj_slide">
-                       
+                    <div class="slide ">
+                        <div class="proj_4 proj_slide">
+                            <!-- img proyecto -->
                             <div class="img_project">
-                                <picture class="block hide">
-                                    <img src="/imgs/gas_design.png" alt="gas_design">
+                                <div class="head_project head_round">
+                                    <p>Curiosity</p>
+                                </div>
+                                <picture class="block hide img_size ">
+                                    <img src="/imgs/curiosity_2.jpg" alt="curiosity_2" onclick="onClick(this)" class="cursor_pointer">
                                 </picture>
-                                <picture class="block">
-                                    <img src="/imgs/gas_pcb.jpg" alt="gas_pcb">
+                                <picture class="block img_size">
+                                    <img src="/imgs/curiosity.jpg" alt="curiosity" onclick="onClick(this)" class="cursor_pointer">
                                 </picture>
-                            
-        
-    
-                            <div class="block">
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum libero inventore optio error voluptas delectus dicta id iste adipisci itaque debitis, eveniet sit soluta veniam perspiciatis, nihil deleniti maiores exercitationem?
-                                Optio natus, quod similique, dolorum pariatur temporibus expedita ab, veritatis mollitia quaerat labore necessitatibus provident possimus? Provident qui laudantium, cupiditate atque autem, adipisci blanditiis quas dicta debitis, sapiente facilis harum.
-                                Praesentium cum iste numquam fugit, ad debitis veritatis similique adipisci non molestias aperiam laborum minus. Debitis non facere fuga vero, incidunt maxime magni, necessitatibus harum repellat amet, vitae ullam molestiae!
-                                Corrupti neque architecto esse doloribus cumque, veniam asperiores officia ipsa fuga tempore accusantium modi eius temporibus rem vitae dolore impedit repellendus aut consequatur enim error. Ratione ipsum totam dignissimos enim.
-                                Voluptas dolore soluta pariatur? Enim magni vero saepe cumque iste repudiandae in quam nemo temporibus rerum distinctio nostrum modi dolorum, repellendus possimus ipsam aperiam explicabo fugiat. Nesciunt ut nam distinctio!
-                                Totam quidem sed sit modi porro. Voluptatem omnis voluptate illum incidunt error maxime esse cupiditate architecto recusandae magnam reiciendis, dolores ipsam cum minus ratione labore fuga consequatur in amet sequi!
-                                Ab, saepe excepturi, non voluptates iusto, voluptatibus unde ut optio similique aut temporibus esse delectus veritatis laborum tempora animi perspiciatis! Accusamus ullam minima sunt ipsa cupiditate sed? Hic, doloribus iure.
-                                Earum repudiandae distinctio, velit ratione beatae facilis eligendi commodi quidem tempora praesentium quos odio neque voluptas impedit sit quam, quis non architecto! Blanditiis illum exercitationem, ullam eaque ad ducimus minus.
-                                Tempora possimus sapiente at eligendi eius quis repellat omnis distinctio nesciunt dolorem dicta qui laudantium sit labore error maiores facilis, soluta voluptatem deserunt recusandae! Ut velit itaque rerum expedita eum.
-                                Illo nobis dolor aperiam unde voluptatibus harum nihil obcaecati doloribus explicabo culpa inventore, officiis, nostrum a quidem aliquam. Praesentium impedit at distinctio iure quis ipsum sunt id animi beatae dolore. --------------</span></div>
+
+                                <div class="block description web_size"><p class="desc_text">Assembly a circuit board for education propuse called: "Curiosity project." </p>
+                                    <div class="head_project">
+                                        <p>Customer</p>
+                                    </div>
+                                    <div class="logo_client logo_round">
+                                        <picture>
+                                            <img src="/imgs/logos/logo_ita.png" alt="logo_ita">
+                                        </picture>
+                                    </div>
+
+                                </div>
+                                
                             </div>
-                        </div>
+                            </div>
                     </div>
 
-
-                    <div class="slide">
-                        <div class="proj_3 proj_slide">
-                       
+                    <div class="slide ">
+                        <div class="proj_2 proj_slide">
+                            <!-- img proyecto -->
                             <div class="img_project">
-                                <picture class="block hide">
-                                    <img src="/imgs/RF_design.png" alt="RF_design">
+                                <div class="head_project head_round">
+                                    <p>Reverse engineering - Flame Control</p>
+                                </div>
+                                <picture class="block hide img_size">
+                                    <img src="/imgs/gas_design.png" alt="gas_pcb" onclick="onClick(this)" class="cursor_pointer">
                                 </picture>
-                                <picture class="block">
-                                    <img src="/imgs/RF_design.png" alt="RF_design">
+                                <picture class="block img_size">
+                                    <img src="/imgs/gas_pcb.jpg" alt="gas_pcb" onclick="onClick(this)" class="cursor_pointer">
                                 </picture>
+
+                                <div class="block description web_size"><p class="desc_text"> Reverse engineering and replication of an obsolete flame failure control module of a furnace, reducing spare part cost.</p>
+                                    <div class="head_project">
+                                        <p>Customer</p>
+                                    </div>
+                                    <div class="logo_client logo_round">
+                                        <picture>
+                                            <img src="/imgs/logos/soriana.png" alt="Tiendas Soriana">
+                                        </picture>
+                                    </div>
+                                    <div class="logo_client logo_round">
+                                        <picture>
+                                            <img src="/imgs/logos/logo_fidget.jpeg" alt="Grupo Fidget">
+                                        </picture>
+                                    </div>
+                                </div>
+                                
                             </div>
-        
-    
-                            <div class="block">
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum libero inventore optio error voluptas delectus dicta id iste adipisci itaque debitis, eveniet sit soluta veniam perspiciatis, nihil deleniti maiores exercitationem?
-                                Optio natus, quod similique, dolorum pariatur temporibus expedita ab, veritatis mollitia quaerat labore necessitatibus provident possimus? Provident qui laudantium, cupiditate atque autem, adipisci blanditiis quas dicta debitis, sapiente facilis harum.
-                                Praesentium cum iste numquam fugit, ad debitis veritatis similique adipisci non molestias aperiam laborum minus. Debitis non facere fuga vero, incidunt maxime magni, necessitatibus harum repellat amet, vitae ullam molestiae!
-                                Corrupti neque architecto esse doloribus cumque, veniam asperiores officia ipsa fuga tempore accusantium modi eius temporibus rem vitae dolore impedit repellendus aut consequatur enim error. Ratione ipsum totam dignissimos enim.
-                                Voluptas dolore soluta pariatur? Enim magni vero saepe cumque iste repudiandae in quam nemo temporibus rerum distinctio nostrum modi dolorum, repellendus possimus ipsam aperiam explicabo fugiat. Nesciunt ut nam distinctio!
-                                Totam quidem sed sit modi porro. Voluptatem omnis voluptate illum incidunt error maxime esse cupiditate architecto recusandae magnam reiciendis, dolores ipsam cum minus ratione labore fuga consequatur in amet sequi!
-                                Ab, saepe excepturi, non voluptates iusto, voluptatibus unde ut optio similique aut temporibus esse delectus veritatis laborum tempora animi perspiciatis! Accusamus ullam minima sunt ipsa cupiditate sed? Hic, doloribus iure.
-                                Earum repudiandae distinctio, velit ratione beatae facilis eligendi commodi quidem tempora praesentium quos odio neque voluptas impedit sit quam, quis non architecto! Blanditiis illum exercitationem, ullam eaque ad ducimus minus.
-                                Tempora possimus sapiente at eligendi eius quis repellat omnis distinctio nesciunt dolorem dicta qui laudantium sit labore error maiores facilis, soluta voluptatem deserunt recusandae! Ut velit itaque rerum expedita eum.
-                                Illo nobis dolor aperiam unde voluptatibus harum nihil obcaecati doloribus explicabo culpa inventore, officiis, nostrum a quidem aliquam. Praesentium impedit at distinctio iure quis ipsum sunt id animi beatae dolore.</span>
+                            </div>
+                    </div>
+
+                    <div class="slide ">
+                        <div class="proj_5 proj_slide">
+                            <!-- img proyecto -->
+                            <div class="img_project">
+                                <div class="head_project head_round">
+                                    <p>Raspberry shield</p>
+                                </div>
+                                <picture class="block hide img_size one_img">
+                                    <img src="/imgs/rasp_shield.jpg" alt="auto_mega" onclick="onClick(this)" class="cursor_pointer">
+                                </picture>
+                                <!-- <picture class="block img_size">
+                                    <img src="/imgs/auto_mega_2.jpg" alt="auto_mega_2">
+                                </picture> -->
+
+                                <div class="block description web_size"><p class="desc_text">Assembly a raspberry shield for prototype. </p>
+                                    <div class="head_project">
+                                        <p>Customer</p>
+                                    </div>
+                                    <div class="logo_client logo_round ">
+                                        <picture>
+                                            <img src="/imgs/logos/maindsteel.jpg" alt="Maindsteel">
+                                        </picture>
+                                    </div>
+
+                                </div>
+                                
                             </div>
                             </div>
                     </div>
 
                 </div>
             </div>
+            
         </section>
-    
+        <div id="modal01" class="modal" onclick="this.style.display='none'">
+            <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div class="modal-content">
+              <img id="img01" style="max-width:100%">
+            </div>
+        </div>
     </main>
+
+
 
     <!-- FOOTER -->
     <footer>

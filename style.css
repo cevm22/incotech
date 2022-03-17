@@ -44,10 +44,9 @@ picture{
 img{
     width: 100%;
     height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
 }
+
 
 .sec_1{
     height: 50vh;
@@ -82,11 +81,25 @@ img{
     justify-content: space-evenly;
     align-items: center;
 }
+.header_projects_container{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 10px;
+}
+.slide{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
 .project_container {
     position: relative;
     height: fit-content;
-    width: 100vw;
+    /* width: 100vw; */
     text-align: center;
   }
 
@@ -96,6 +109,12 @@ img{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
+    border: solid 5px purple;
+    border-radius: 20px;
+    width: auto;
+    /* background-color: white; */
+
 }
 
 .img_project{
@@ -104,7 +123,8 @@ img{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border: solid 3px white;
+    width: 450px;
+    
 }
 
 .head_project{
@@ -118,7 +138,10 @@ img{
     width: 100%;
     
 }
-
+.head_round {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px ;
+}
 .block{
     margin-bottom: 10px;
     position: relative;
@@ -127,6 +150,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
 }
 
 .block img{
@@ -136,22 +160,76 @@ img{
 .block p{
     width: 100%;
     font-size: var(--font-size-project-text);
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
 .head_project p{
     font-size: var(--font-size-project-header);
 }
 .hide{
     display: none;   
-    /* display: inherit; */
 }
 
 .logo_client{
-    margin-top: 10px;
-    background-color: black;
+    margin: 10px;
+    background-color: white;
     width: 150px;
     height: 150px;
+    
 }
+.logo_client picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo_client img{
+    width: 100%;
+    height: auto;
+}
+
+.logo_round{
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+/* ================================================================================== */
+.modal {
+    z-index:1;
+    display:none;
+    padding-top:10px;
+    position:fixed;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgba(0,0,0,0.8)
+    }
+    
+.modal-content{
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    
+
+.modal-hover-opacity {
+    opacity:1;
+    filter:alpha(opacity=100);
+    -webkit-backface-visibility:hidden;
+    }
+    .close {
+        text-decoration:none;float:right;font-size:32px;font-weight:bold;color:white
+    }
+
+.cursor_pointer{
+    max-width:100%;
+    cursor: pointer;
+}
+/*==================================================================================  */
 
 /* =========================================================================== */
 
@@ -166,3 +244,78 @@ footer{
     text-align: center;
 }
 
+@media (min-width:650px){
+    .project_container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+    .img_project{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        /* justify-content:baseline; */
+    }
+
+    .slide{
+        height: auto;
+        width: 500px;
+    }
+    .proj_slide{
+        height: 700px;
+    }
+    .hide{
+        display: inherit;
+    }
+    .block{
+        width: 50%;
+        height: 200px;
+    }
+    .block img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .block .desc_text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .web_size{
+        width: 100%;
+        display: flex;
+
+    }
+    .block .logo_client{
+        height: auto;
+    }
+    .logo_client picture{
+        height: 150px;
+        width: 150px;
+    }
+    .logo_client img{
+        height: auto;
+    }
+    .one_img{
+        width: 100%;
+    }
+    .desc_text{
+        align-items: center;
+        justify-content: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .head_project p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .description p{
+        height: 150px;
+        width: 100%;
+    }
+}
