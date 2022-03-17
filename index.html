@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0; user-scalable=no">
     <link rel="stylesheet" href="style.css">
     <script src="./script.js"></script>
     <title>Document</title>
@@ -12,7 +12,23 @@
         <!-- HEADER -->
     <header>
         <nav>
-            NAV
+            <div class="nav_main">
+                <div class="nav_container">
+                <div class="logo">
+                    <picture>
+                        <img src="./imgs/logos/logo_incotech.svg" alt="">
+                    </picture>
+                </div>
+                <div class="navegacion">
+                <ul>
+                    <li>Home</li>
+                    <li>What we do?</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            </div>
+        </div> 
         </nav>
     </header>
 
@@ -20,10 +36,21 @@
     <main>
         <section >
             <div class="sec_1">
-                LOGO Y ALGUN TEXTO SOBRE LA EMPRESA. (imagen bg, logo centrado, resumen empresa)
+                <!-- LOGO Y ALGUN TEXTO SOBRE LA EMPRESA. (imagen bg, logo centrado, resumen empresa) -->
+                <div class="bg_shadow">
+                    <div class="main_container">
+                        <div class="logo_incotech">
+                            <picture>
+                                <img src="/imgs/logos/logo_incotech.svg" alt="Incotech Systems logo" class="logo_incotech_pos">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section >
+
+
             <!-- LISTA DE SERVICIOS QUE SE OFRECEN -->
             <div class="sec_2">
                 <!-- DISENO DE PCB -->
@@ -48,7 +75,8 @@
         </section>
         
         <!-- CURRICULO DE PROYECTOS -->
-        <section >
+        <section class="section_3_bg">
+            <div class="opac">
             <div class="header_projects_container"></div>
             <div class="sec_3">
                 <div class="project_container">
@@ -215,7 +243,7 @@
 
                 </div>
             </div>
-            
+            </div>
         </section>
         <div id="modal01" class="modal" onclick="this.style.display='none'">
             <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>

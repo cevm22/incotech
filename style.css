@@ -1,8 +1,16 @@
 :root{
-    --primary-color-1:rgba(255, 196, 0, 0.5);
+    /* HEX #650f34 */
+    /* rgb rgba(101,15,52,255) */
+    /* HEX #f5711e */
+    /* rgb rgba(245,113,30,255) */
+    --primary-color-1:rgba(245,113,30,255);
+    --secondary-color:rgba(101,15,52,255);
+    --secondary-color_2: #280514;
     --font-size-project-header: 3rem;
     --font-size-project-text: 2.5rem;
-
+    --bg-opacity-main: rgba(0, 0, 0, 0.651);
+    --bg-opacity-logo:rgba(0, 0, 0, 0.863);
+    --bg-opacity-card: rgba(253, 235, 235, 0.753);
 }
 *{
     box-sizing: border-box;
@@ -13,16 +21,58 @@
 
 html{
     font-size: 62.5%;
-    background-color: gray;    
+    scroll-behavior: smooth;
 }
 
 
 nav{
-    height: 10rem;
+    position: fixed;
+    z-index: 1;
+    height: 11%;
     width: 100%;
     min-width: 32rem;  
-    background-color: brown;
+    background-color: black;
+    color: white;
 }
+
+.nav_container{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    left: -20px;
+    height: 10vh;
+    width: 300px;
+}
+.navegacion{
+    display: inline-block;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+}
+.navegacion li{
+        display: inline-block;
+        font-size: 20px;
+        color: white;
+        padding-top: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size:var(--font-size-project-header) ;
+}
+
+li:hover{
+    color: var(--primary-color-1);
+    text-decoration:overline  1px;
+    
+}
+/* ================================================== */
 
 main{
     display: flex;
@@ -31,11 +81,20 @@ main{
     height: auto;
 
 }
+
 section{
     position: relative;
     /* Quitar el scroll hacia los lados */
     overflow: hidden;
 }
+.section_3_bg{
+    background-image: url(/imgs/comp_bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    image-rendering:optimizeQuality;
+    background-position:center;
+}
+
 picture{
     height: 100%;
     width: 100%;
@@ -46,14 +105,45 @@ img{
     height: 100%;
 
 }
+/* ======================================================= */
 
 
 .sec_1{
-    height: 50vh;
+    height: 100vh;
     width: 100vw;
-    background-color: blueviolet;
+    /* background-image: url(/imgs/bg.jpg); */
+    background-image: url(/imgs/road.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    image-rendering:optimizeQuality;
+    background-position:center;
+}
+
+.bg_shadow{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-opacity-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_incotech{
+    width: auto;
+    height: 300px;
+    padding-bottom: 50px;
 
 }
+
+
+
+/* ======================================================= */
+
 
 /* tarjetas servicios */
 .sec_2{
@@ -61,7 +151,6 @@ img{
     flex-wrap: wrap;
     height: auto;
     width: 100vw;
-    /* background-color: green; */
     justify-content: space-evenly;
     align-items: center;
 }
@@ -75,11 +164,16 @@ img{
 }
 
 /* Curriculo proyectos */
+
 .sec_3{
     height: auto;
     width: 100vw;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.opac{
+    background-color: rgba(44, 42, 42, 0.582);
 }
 .header_projects_container{
     height: 100px;
@@ -94,13 +188,14 @@ img{
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+    
 }
 
 .project_container {
     position: relative;
     height: fit-content;
-    /* width: 100vw; */
     text-align: center;
+    
   }
 
 
@@ -110,10 +205,10 @@ img{
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
-    border: solid 5px purple;
+    /* border: solid 5px var(--secondary-color); */
     border-radius: 20px;
     width: auto;
-    /* background-color: white; */
+    background-color: var(--bg-opacity-card);
 
 }
 
@@ -133,7 +228,7 @@ img{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: orange;
+    background-color: var(--primary-color-1);
     height: 80px;
     width: 100%;
     
@@ -143,14 +238,13 @@ img{
     border-top-right-radius: 16px ;
 }
 .block{
-    margin-bottom: 10px;
     position: relative;
     width: 450px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
+
 }
 
 .block img{
@@ -164,10 +258,13 @@ img{
 }
 .head_project p{
     font-size: var(--font-size-project-header);
+    /* color:white */
+    
 }
 .hide{
     display: none;   
 }
+
 
 .logo_client{
     margin: 10px;
@@ -191,6 +288,7 @@ img{
 .logo_round{
     overflow: hidden;
     border-radius: 100px;
+    
 }
 
 /* ================================================================================== */
@@ -239,7 +337,7 @@ footer{
     min-width: 32rem;
     height: 10vh;
     width: 100%;
-    background-color:var(--primary-color-1);
+    background-color:var(--secondary-color_2);
     color: black;
     text-align: center;
 }
