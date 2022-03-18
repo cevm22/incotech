@@ -21,9 +21,9 @@
                 </div>
                 <div class="navegacion">
                 <ul>
-                    <li><a href="#footer">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#servicios">What we do?</a></li>
+                    <li><a href="#servicios">Services</a></li>
                     <li><a href="#home">Home</a></li>
                 </ul>
             </div>
@@ -35,6 +35,7 @@
     <!-- MAIN -->
     <main>
         <section id="home">
+            
             <div class="sec_1">
                 <!-- LOGO Y ALGUN TEXTO SOBRE LA EMPRESA. (imagen bg, logo centrado, resumen empresa) -->
                 <div class="bg_shadow">
@@ -52,6 +53,11 @@
         <section id="servicios">
             <!-- LISTA DE SERVICIOS QUE SE OFRECEN -->
             <div class="sec_2">
+                <div class="header_projects_container">
+                    <div class="header_sec_3">
+                        <span>What we can do?</span>
+                    </div>
+                </div>
                 <!-- DISENO DE PCB -->
                 <div class="servicios">
                     <picture>
@@ -71,12 +77,20 @@
                     </picture>
                 </div>
             </div>
+            
         </section>
         
         <!-- CURRICULO DE PROYECTOS -->
+        
+
         <section class="section_3_bg" id="projects">
+            <!-- <div class="spacer_sec_2"></div> -->
             <div class="opac">
-            <div class="header_projects_container"></div>
+            <div class="header_projects_container">
+                <div class="header_sec_3">
+                    <span>Projects</span>
+                </div>
+            </div>
             <div class="sec_3">
                 <div class="project_container">
                       
@@ -217,14 +231,14 @@
                                 <div class="head_project head_round">
                                     <p>Raspberry shield</p>
                                 </div>
-                                <picture class="block hide img_size one_img">
+                                <picture class="block  img_size one_img">
                                     <img src="/imgs/rasp_shield.jpg" alt="auto_mega" onclick="onClick(this)" class="cursor_pointer">
                                 </picture>
                                 <!-- <picture class="block img_size">
                                     <img src="/imgs/auto_mega_2.jpg" alt="auto_mega_2">
                                 </picture> -->
 
-                                <div class="block description web_size"><p class="desc_text">Assembly a raspberry shield for prototype. </p>
+                                <div class="block description web_size"><p class="desc_text">Assembly a raspberry shield for prototype to integrate in a line production and reduce spare part cost. </p>
                                     <div class="head_project">
                                         <p>Customer</p>
                                     </div>
@@ -250,6 +264,46 @@
               <img id="img01" style="max-width:100%">
             </div>
         </div>
+
+        <section id="contact">
+            <div class="contact_container">
+                <div class="header_contact">
+                    <div class="header_sec_3">
+                        <span>Contact Us</span>
+                    </div>
+                </div>
+                <div class="formulario">
+                    <form class="form_template" action="https://formsubmit.co/2c0b1ddfd839b7b0a73c89978f9f33bd" method="post">
+
+                        <div class="name_box form_box col_box">
+                        <label class="label_name " for="name">Name:</label>
+                        <input type="text" name="name" id="name" required>
+                        </div>
+                        
+                        <div class="email_box form_box col_box">
+                        <label class="label_email "for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        </div>
+
+                        <div class="country_box form_box col_box">
+                        <label class="label_country " for="country">Country</label>
+                        <input type="text" name="country" id="country" required>
+                        </div>
+
+                        <div class="message_box form_box col_box text_box">
+                        <label class="label_message " for="message">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                        </div>
+
+                        <div class="btn_box form_box col_box">
+                        <input type="submit" value="Send Message" class="btn">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            
+        </section>
     </main>
 
 
@@ -257,7 +311,17 @@
     <!-- FOOTER -->
     <footer id="footer">
         <div>
-            REDES SOCIALES Y UBICACION CON GOOGLE MAPS
+            <div class="socialmedia">
+                <ul class="social_list"> 
+                    <li><picture class="social_logo"><img src="./imgs/footer/facebook.svg" alt="FB"></picture></li>
+                    <li><picture class="social_logo"><img src="./imgs/footer/instagram.svg" alt="IG"></picture></li>
+                    <li><picture class="social_logo"><img src="./imgs/footer/linkedin.svg" alt="LI"></picture></li>
+                    <li><picture class="social_logo"><img src="./imgs/footer/twitter.svg" alt="TW"></picture></li>
+                    <li><picture class="social_logo"><img src="./imgs/footer/youtube.svg" alt="IG"></picture></li>
+                </ul>
+            </div>
+            <div class="footer_desc hide"> <p class="text">Incotech Systems 2022. Aguascalientes, AGS. México.</p></div>
+
         </div>
     </footer>
 
