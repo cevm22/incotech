@@ -236,6 +236,7 @@ img{
 
 .header_sec_3{
     height: 100%;
+    min-height: 45px;
     width: 100%;
     background-color:black;
     color: white;
@@ -249,6 +250,7 @@ img{
 
 .slide{
     height: 100vh;
+    height: 850px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -318,12 +320,23 @@ img{
 }
 .block p{
     width: 100%;
-    font-size: var(--font-size-project-text);
+    font-size: 2rem;
     /* margin-bottom: 5px; */
 }
 .head_project p{
     font-size: var(--font-size-project-header);
     
+}
+
+
+.desc_text{
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
 .hide{
     display: none;   
@@ -374,6 +387,7 @@ img{
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 80%;
     transform: translate(-50%, -50%);
     }
     
@@ -410,7 +424,7 @@ img{
 }
 
 .header_contact{
-    position: absolute;
+    position: relative;
     top: 0;
     width: 100%;
     height: 11vh;
@@ -419,8 +433,7 @@ img{
 
 .formulario{
     position: relative;
-    top: 11%;
-    /* bottom: 10vh; */
+    /* top: 11%; */
     height: 100%;
     width: auto;
     min-width: 320px;
@@ -433,7 +446,6 @@ img{
     align-items: center;
     justify-content: center;
     position: relative;
-    /* top: 0; */
 }
 
 .form_box{
@@ -525,10 +537,13 @@ footer{
 .footer_desc{
     position:absolute;
     width: 150px;
-    height: 5vh;
     left: 0px;
-    top: 30%;
-    font-size: 1.2rem;
+    bottom: 0;
+    font-size: 1rem;
+}
+
+.social_logo img{
+    width: 50px;
 }
 
 @media (min-width:660px){
@@ -642,10 +657,17 @@ footer{
     /* ======================================= */
     /* Contact Us */
 
+    #contact{
+        height: 100%;
+    }
+    .contact_container{
+        height: 100%;
+    }
     .formulario{
         top: 10%;
         height:  700px;
         width: 600px;
+        /* height:max-content; */
     }
 
     .form_template{
